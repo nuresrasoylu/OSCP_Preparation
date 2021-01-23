@@ -8,7 +8,7 @@ Makine IP: 10.129.86.76
 Nmap -A 10.129.86.76  
 ```
  
-![image](.\assets\5.PNG)
+![image](./assets/5.PNG)
 
 https://www.exploit-db.com/exploits/17491 - FTP versiyonunda Command Execution açığı olduğu görülüyor. 
 
