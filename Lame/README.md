@@ -27,7 +27,9 @@ PASV FTP, Dosya Aktarım Protokolü (FTP) bağlantılarını kurmak için altern
  
 Ftp'den devam edemediğim için samba da ilgili versiyonda açık olup olmadığına bakıyorum. 
  
+445 portunda samba çalıştığını gördüm ve searchsploit ile araştırdım.
 
+![image](./assets/7.PNG)
  
 ```console
 msf6 > search samba 3.0.20 
