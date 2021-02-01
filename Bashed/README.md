@@ -23,7 +23,7 @@ Sayfa içindeki link: https://github.com/Arrexel/phpbash
 
 http://10.129.90.18/dev/phpbash.php dizinine gittiğimizde komut çalıştırabildiğimizi görüyoruz.
 
-![image](./assets/2.PNG)
+![image](./assets/8.PNG)
 
 Burada kullanıcının yetkilerine bakıyoruz ve makina içerisinde python olduğunu doğruluyoruz. Şimdi reverse shell çalıştırmayı deneyelim.
 
